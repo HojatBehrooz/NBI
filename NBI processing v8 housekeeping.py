@@ -647,6 +647,8 @@ df = df[mask].copy()
 # profile = pp.ProfileReport(df[NF+NNF+RAT+['STRUCTURE_NUMBER_008']],title='Pandas Profiling Report',explorative=True)
 # profile.to_file("nj_profiling.html")
 df_c=df.copy()
+df.to_csv('NJ_NY_CT_HighWay2022.csv', index=False)
+
 # %% initialize required variables
 Numeric_f = "Year, YEAR_BUILT_027, ADT_029, YEAR_RECONSTRUCTED_106, MAIN_UNIT_SPANS_045,\
    STRUCTURE_LEN_MT_049, ROADWAY_WIDTH_MT_051, IMP_LEN_MT_076"
